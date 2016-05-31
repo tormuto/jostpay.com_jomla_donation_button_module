@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>Content - JostPay Donation Plugin</name>
+	<author>JostPay Limited</author>
+	<creationDate>May 2016</creationDate>
+	<copyright>Copyright (C) 2016 - JostPay Limited. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@jostpay.com</authorEmail>
+	<authorUrl>https://jostpay.com</authorUrl>
+	<version>1.1</version>
+	<description><![CDATA[ 
+  <h2>Simple Joomla JostPay Donation Plugin</h2>
+			<p>Thank you for installing Simple Joomla JostPay Donation Plugin. This module is a customizable plugin to enable JostPay Payment method on your Joomla content. The following features are available: <ul>
+				<li>Allow you to enter your merchant-id</li>
+				<li>Allow you to enter your store-id</li>
+			    <li>Return address (URL) when payment is complete</li>
+			    <li>To view the buy now button on your article add this TAG to your content {wpjostpaydonation}{/wpjostpaydonation}</li>
+			   
+    
+<br /> Visit <a href="https://jostpay.com" target="_blank">https://jostpay.com</a> for details.
+			</p><br/><br/>
+	Thanks!
+	<br />
+	]]>JostPay Donation plugin for Joomla by JostPay</description>
+	
+	<files>
+		<filename plugin="wp_jostpay_donation">wp_jostpay_donation.php</filename>
+		<filename>index.html</filename>
+		
+	</files>
+	
+	
+    
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+					<field name="merchant_id" type="number" default="" required="true" label="Your JostPay Merchant ID" description="Login to your jostpay account on https://jostpay.com to get your merchant id." />
+
+					<field name="payment_button_text" type="text" default="Pay with Mastercard, Visacard, Verve, Perfect Money or Bitcoin (via JostPay)" label="Payment Button Label" description="What will appear on your payment button" />
+					
+					<field name="store_id" type="text" default="" label="Your Optional Store ID" description="Login to your jostpay account on https://jostpay.com to create a store and get your store id." />
+
+					<field name="merchant_ref" type="text" default="" label="Prefix for random Merchant Reference(Optional)" description="Random number will be used for merchant ref. Specify a prefix to prepend to it." />
+
+					<field name="memo" type="text" default="" label="Memo (Optional)" description="What you want the user to see" />
+
+					<field name="notify_url" type="url" default="" label="Notification URL (Optional)" description="URL to send JostPay notification to." />
+
+					<field name="success_url" type="url" default="" label="Success URL (Optional)" description="URL to send JostPay notification to." />
+
+					<field name="fail_url" type="url" default="" label="Failed URL (Optional)" description="URL to send JostPay notification to." />
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>
